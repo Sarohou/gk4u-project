@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* styling the logo */
+body{
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    padding: auto;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+}
+/* Style the menu */
+.navbar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #dd1515;
+}
+.navbar {
+    list-style:none;
+}
+ li a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+.navbar li {
+    float: left;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    
+}
+.navbar li a{
+    transition: all 0.3 ease 0s;
+    display: block;
+    
+
+}
+.navbar li a:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition:700ms ease;
+
+}
+.dropdown-menu li{
+    background: rgb(255, 0, 0);
+    display: none;
+    animation: animate 1s ease;
+}
+.dropdown-menu  li a{
+   color:rgb(255, 255, 255)
+}
+.dropdown-menu li a:hover{
+   background: #000;
+   color: rgb(255, 255, 255);
+}
+.navbar li:hover li{
+    display:block;
+}
+.dropdown-menu li:nth-child(1){
+    animation: animate 500ms ease;
+}
+.dropdown-menu  li:nth-child(2){
+    animation: animate 800ms ease;
+}
+.dropdown-menu li:nth-child(3){
+    animation: animate 1.5s ease;
+} 
+
+@keyframes animate{
+    0%{
+        transform: scale(2,2) rotatex(90deg);
+    }
+    100%{
+        transform: scale(1,1) rotatex(0deg);
+    }
+}
+/* Styling the content in index.html */
+.centring h1{
+    display: flex;
+    justify-content: left;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    height: 20vh;
+    align-items: center;
+    padding: 20px;
+}
+.img-h1{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+.centring h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    height: 20vh;
+    align-items: center;
+}
+.content{
+    display: flex;
+    padding: 10px;
+    margin: auto;
+
+}
+.content-image{
+    flex: 0 1 25%;
+    margin-right: 10px;
+}
+.content-text{
+    flex: 0 1 75%;
+    margin-right: 100px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    word-spacing: 2px;
+    line-height: 30px;
+    text-indent: 10px;
+    font-size: 18px;
+
+}
+/* styling  contribute.html */
+.cont{
+    padding: 200px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.cont-img{
+    flex: 0 1 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+
+
+}
+.cont-text{
+    flex: 0 1 37%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: blanchedalmond;
+    height: 80vh;
+    align-items: center;
+    flex-direction: column;
+    word-spacing: 2px;
+    line-height: 25px;
+
+}
+#GK,input {
+    height: 30px;
+    width: 90px;
+}
+.text-a{
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 2px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-con{
+    padding: 20px;
+    flex: 0 1 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.about-me{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 150vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    word-spacing: 2px;
+    line-height: 30px;
+    text-indent: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+#about-me{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+
+}
+.about-me a{
+    display: flex;
+    padding: 10px;
+    font-size: 35px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  /* styling general.html */
+ .general-Q{
+     display: flex;
+     margin: 250px 30px;
+     height: 50vh;
+     align-items: center;
+     flex-direction: column;
+     font-family: 'Montserrat', sans-serif;
+     word-spacing: 2px;
+     line-height: 40px;
+     text-indent: 10px;
+     color: rgb(0, 255, 0);
+
+ }
+ .general-A{
+    display: flex;
+    margin: 20px 100px;
+    height: 10vh;
+    align-items: left;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 2px;
+    line-height: 40px;
+    text-indent: 10px;
+    color: rgb(0, 255, 255);
+
+ } 
+ /* styling science.html */
+.science{
+    display: flex;
+    margin: 250px 30px;
+    height: 10vh;
+    align-items: left;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 2px;
+    line-height: 40px;
+    text-indent: 10px;
+    color: rgb(0, 255, 255);
+}
+/* styling quizzes.html */
+.quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 160px 30px;
+    height: 200vh;
+    align-items: left;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 2px;
+    line-height: 40px;
+    font-weight: 60px;
+    text-indent: 10px;
+    display: inline-block;
+    color: rgb(0, 255, 255);
+    line-height: 50px;
+}
