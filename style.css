@@ -103,11 +103,14 @@ body{
     height: 20vh;
     align-items: center;
     padding: 20px;
+    text-shadow: 5px 2px 3px whitesmoke;
+    
 }
 .img-h1{
     display: flex;
     justify-content: center;
     align-items: right;
+    
 }
 .centring h2{
     display: flex;
@@ -135,7 +138,7 @@ body{
     color: rgb(255, 255, 255);
     word-spacing: 2px;
     line-height: 30px;
-    text-indent: 10px;
+    text-indent: 15px;
     font-size: 18px;
 
 }
